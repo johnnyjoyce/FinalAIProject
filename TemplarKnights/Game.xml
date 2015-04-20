@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-graph>
+	<location id="1" name="Jerusalem">
+		<description>And so it begins, the journey to see the Holy Grail arrives safely in Cyprus. Your first destination is the Temple Mount. So without further hesitation you begin.
+		</description>
+		<exit title="Temple Mount" direction="N" />
+	</location>
+	
+	<location id="2" name="Temple Mount">
+		<description>You have arrived at the current location of the Holy Grail. Before you can retrieve you must speak to its protectors. Once you have aqcuired the Holy Grail, you have three options in which direction to go. First is along the coast to Netanya, the quickest of all the routes, but, word has spread of increased enemy movement along this path. Your next choice is to travel to Beit She'an, a more safe route inland, although not as quick. Finally is the route furtherest inland, to Amman. Now this maybe the longest route but it is by far the safest.
+		</description>
+		<exit title="Netanya" direction="NE" />
+		<exit title="Beit She'an" direction="N" />
+		<exit title="Amman" direction="NW" />
+	</location>
+	
+	<location id="3" name="Netanya">
+		<description>Having left the Temple Mount and began your journey, you arrive at your first town. It is a small village with very few buildings. You have the option to continue on the same path to Beirut, or, change direction and head inland to Namar.
+		</description>
+		<exit title="Beirut" direction="N" />
+		<exit title="Namar" direction="NW" />
+		<exit title="Temple Mount" direction="SW" />
+	</location>
+	
+	<location id="4" name="Beit She'an">
+		<description>Having left the Temple Mount and began your journey, you arrive at your first town. Beit She'an is a small town with very few buildings, however it is renowned for its hospitality. You meet someone walking down the street.
+		</description>
+		<exit title="Namar" direction="N" />
+		<exit title="Temple Mount" direction="S" />
+	</location>
+	
+	<location id="5" name="Amman">
+		<description>
+		Having left the Temple Mount and began your journey, you arrive at your first town. It is a small and desolate place.
+		</description>
+		<exit title="Palmyra" direction="N" />
+		<exit title="Temple Mount" direction="SE" />
+	</location>
+	
+	<location id="6" name="Beirut">
+		<description>
+		Beirut
+		</description>
+		<exit title="Tripoli" direction="N" />
+		<exit title="Netanya" direction="S" />
+	</location>
+	
+	<location id="7" name="Namar">
+		<description>
+		You arrive at Namar, just hoping to rest your weary bodies before continuing.
+		</description>
+		<exit title="Al Tal" direction="N" />
+		<exit title="Netanya" direction="SE" />
+		<exit title="Beit She'an" direction="S" />
+	</location>
+	
+	<location id="8" name="Palmyra">
+		<description>
+		Palmyra
+		</description>
+		<exit title="Al Tal" direction="NE" />
+		<exit title="Al Tabqah" direction="N" />
+		<exit title="Amman" direction="S" />
+	</location>
+	
+	<location id="9" name="Al Tal">
+		<description>
+		
+		</description>
+		<exit title="Zaidal" direction="N" />
+		<exit title="Palmyra" direction="SW" />
+		<exit title="Namar" direction="S" />
+		<exit title="Al Tabqah" direction="NW" />
+	</location>
+	
+	<location id="10" name="Tripoli">
+		<description>
+		Upon arriving at Tripoli you decide to rest for the night in the local inn house.
+		</description>
+		<exit title="Tartus" direction="N" />
+		<exit title="Zaidal" direction="NW" />
+		<exit title="Beirut" direction="S" />
+	</location>
+	
+	<location id="11" name="Zaidal">
+		<description>
+		Zaidal, known for its prowess in making spectacular weapons, is just as beautiful as you had heard, with a massive forest to your right and nothing but the ocean to your left.
+		</description>
+		<exit title="Idlib" direction="N" />
+		<exit title="Tripoli" direction="SE" />
+		<exit title="Al Tal" direction="S" />
+	</location>
+	
+	<location id="12" name="Al Tabqah">
+		<description>
+		
+		</description>
+		<exit title="Aleppo" direction="N" />
+		<exit title="Idlib" direction="NE" />
+		<exit title="Al Tal" direction="SE" />
+		<exit title="Palmyra" direction="S" />
+	</location>
+	
+	<location id="13" name="Tartus">
+		<description>
+		
+		</description>
+		<exit title="Latakia" direction="N" />
+		<exit title="Tripoli" direction="S" />
+		<exit title="Idlib" direction="W" />
+	</location>
+	
+	<location id="14" name="Idlib">
+		<description>
+		You can sense you are getting ever closer to your destination as you arrive in Idlib.
+		</description>
+		<exit title="Antioch" direction="N" />
+		<exit title="Tartus" direction="E" />
+		<exit title="Zaidal" direction="S" />
+		<exit title="Al Tabqah" direction="SE" />
+	</location>
+	
+	<location id="15" name="Aleppo">
+		<description>
+		You can sense you are getting ever closer to your destination as you arrive in Aleppo.
+		</description>
+		<exit title="Antioch" direction="NE" />
+		<exit title="Al Tabqah" direction="S" />
+	</location>
+	
+	<location id="16" name="Latakia">
+		<description>
+		You can sense you are getting ever closer to your destination as you arrive in Latakia.
+		</description>
+		<exit title="Antioch" direction="NW" />
+		<exit title="Tartus" direction="S" />
+	</location>
+	
+	<location id="17" name="Antioch">
+		<description>
+		You are in the city of Antioch. You see a long street with high buildings and a castle. You head to the location of the boat that will be taking you to Cyprus.
+		</description>
+		<exit title="Cyprus" direction="N" />
+		<exit title="Latakia" direction="SE" />
+		<exit title="Idlib" direction="S" />
+		<exit title="Aleppo" direction="SW" />
+	</location>
+	
+	<location id="18" name="Cyprus">
+		<description>
+		You have finally arrived. In the distance, you can see your destination, in the distance, where this hellish journey can finally end. You proceed to meeting place to hand over the Holy Grail.
+		</description>
+	</location>
+	
+	<item name="Dagger" type="gmit.Weapon.class" value="2" locationID="2" />
+	<item name="Sword" type="gmit.Weapon.class" value="4" locationID="4" />
+	<item name="Mace" type="gmit.Weapon.class" value="5" locationID="5" />
+	<item name="Scimitar" type="gmit.Weapon.class" value="7" locationID="7" />
+	<item name="Spear" type="gmit.Weapon.class" value="8" locationID="9" />
+	<item name="Greatsword" type="gmit.Weapon.class" value="9" locationID="11" />
+	<item name="Greek Fire" type="gmit.Weapon.class" value="10" locationID="13" />
+	<item name="Water" type="gmit.Item.class" value="20" locationID="1"/>
+	<item name="Wine" type="gmit.Item.class" value="25" locationID="1"/>
+	<item name="Apple" type="gmit.Item.class" value="20" locationID="5"/>
+	<item name="Orange" type="gmit.Item.class" value="20" locationID="5"/>
+	<item name="Chicken" type="gmit.Item.class" value="35" locationID="8"/>
+	<item name="Beef" type="gmit.Item.class" value="35" locationID="8"/>
+	<item name="Potion" type="gmit.Item.class" value="75" locationID="12"/>
+	<item name="Holy Grail" type="gmit.Item.class" locationID="1" />
+	
+	<game-character id="1" name="Vicious Saracen" type="gmit.Saracen.class">
+		<search-algorithm name="gmit.HillClimbing.class" />
+		<item name="Scimitar" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="1" name="Deadly Templar Knight" type="gmit.Knight.class">
+		<search-algorithm name="gmit.gmit.HillClimbing.class" />
+		<item name="Greatsword" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="1" name="Thief" type="gmit.Thief.class">
+		<search-algorithm name="gmit.gmit.HillClimbing.class" />
+		<item name="Dagger" type="gmit.Weapon.class"/>
+	</game-character>
+	
+</game-graph>

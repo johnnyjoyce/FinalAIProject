@@ -10,7 +10,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
 
-import net.sourceforge.jFuzzyLogic.FIS;
+import net.sourceforge.jFuzzyLogic.*;
 
 public class Runner {
 	
@@ -32,7 +32,7 @@ public class Runner {
 		    {
 		        SAXParser saxParser = saxParserFactory.newSAXParser();
 		        Parser handler = new Parser();
-		        saxParser.parse(new File("game.xml"), handler);
+		        saxParser.parse(new File("Game.xml"), handler);
 		       	            
 		    } catch (ParserConfigurationException e)
 		    {
@@ -46,33 +46,31 @@ public class Runner {
 	        // Error while loading?
 	        if( fis == null ) 
 	        { 
-	            System.err.println("Can't load file: '" + fileName + "'");
+	            System.err.println("Unable load file: '" + fileName + "'");
 	            return;
 	        }	    
 		    
 		    //System Object	    
 			Scanner input = new Scanner(System.in);
-			System.out.println("Welcome Adventurer!!! \n What is your name?");
+			System.out.println("Welcome Good Sir. \n Pray tell what is your name?");
 			String name = input.nextLine();
 			System.out.println("Welcome " + name);
-			System.out.println("----------------------------------------------------------------------");
 			System.out.println("The year is  1187 and the crusader army of the Kingdom of Jerusalem \n" 
 								+ "has been all but destroyed by Saladin at the Horns of Hattin.\n"
 								+ "As a Templar knight, having survived the battle, you have been entrusted with going to Jerusalem, \n"
 							    + "taking the Holy Grail from the Temple Mount and brining it safely to Cyprus, via the port of Antioch.\n"
 								+ "As a consequence of the defeat at Hattin, a large Saracen army is marching on Jerusalem and the Kingdom is now swarming\n"
 							    + "with Saracen invaders. Danger lurks everywhere, among the common folk are thieves and brigands who wish to assail or rob you or worse...!");
-			System.out.println("----------------------------------------------------------------------");
 			
 			JourneyRoute jm = new JourneyRoute();
 			
 			boolean play = true;
 			while(play)
 			{
-				System.out.println("What would you like to do?");
+				System.out.println("Please indicate the course of action you would like to take?");
 				Scanner scan = new Scanner(System.in);
 				String urInput = scan.nextLine();		
-				System.out.println("> User's Input: " + urInput);
+				System.out.println("> Player Input: " + urInput);
 				switch(urInput)
 				{
 					case("look"):
@@ -85,7 +83,7 @@ public class Runner {
 					{
 						
 						location.getName();						
-						System.out.println("\nEnter the direction you want to go?");
+						System.out.println("\nPlease enter the location you would like to travel to?");
 						urInput = scan.nextLine();	
 						break;
 					}
@@ -103,7 +101,7 @@ public class Runner {
 					}
 					case("quit"):
 					{
-						System.out.println("Bye Adventure " + name);
+						System.out.println("Goodbye " + name);
 						play = false;
 					}
 					default: System.out.println("Invalid Command");
