@@ -62,7 +62,7 @@ public class Runner {
 								+ "As a consequence of the defeat at Hattin, a large Saracen army is marching on Jerusalem and the Kingdom is now swarming\n"
 							    + "with Saracen invaders. Danger lurks everywhere, among the common folk are thieves and brigands who wish to assail or rob you or worse...!");
 			
-			JourneyRoute jm = new JourneyRoute();
+			JourneyRoute jr = new JourneyRoute();
 			
 			boolean play = true;
 			while(play)
@@ -105,10 +105,8 @@ public class Runner {
 						play = false;
 					}
 					default: System.out.println("Invalid Command");
-				}
-				
+				}		
 			}	
 		}
-
 	}
 }
