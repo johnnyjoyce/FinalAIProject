@@ -2,6 +2,7 @@ package gmit;
 
 public class Weapon {
 	
+	//Setting the weapon stats
 	int[] dagger = { 1,3,1,2,7 };
 	int[] sword = { 2,5,6,2,5 };
 	int[] mace = { 1,4,3,2,5 };

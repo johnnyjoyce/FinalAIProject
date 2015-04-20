@@ -94,7 +94,8 @@ public class Parser extends DefaultHandler{
 				int locationID = Integer.parseInt(atts.getValue("id"));
 				String locationName = atts.getValue("name");
 				
-				//Generate a new instance of Location on-the-fly using reflection. The statement Class.forName("gmit.Location").newInstance(); invokes the 
+				//Generate a new instance of Location on-the-fly using reflection. 
+				//The statement Class.forName("gmit.Location").newInstance(); invokes the 
 				//Java Class Loader and the calls the null (default) constructor of Location.
 				Location loc = (Location) Class.forName("gmit.Location").newInstance();
 				loc.setId(locationID); //Now configure the Location object with an ID, Name, Description etc...
@@ -214,25 +215,23 @@ public class Parser extends DefaultHandler{
 		}
 	}
 	
-	//Hopefully, you won't have to worry about this...
+	//You won't have to worry about this
    	public void error(SAXParseException e) {
-   		System.out.println("[ERROR] " + "Yikes....:" + e.getMessage());
+   		System.out.println("[ERROR] " + "Error:" + e.getMessage());
    		System.exit(0);
    	}
-
-   	//Or this either...
+   	
    	public void warning(SAXParseException e) {
-   		System.out.println("[ERROR] " + "Warning....:" + e.getMessage());
+   		System.out.println("[ERROR] " + "Warning:" + e.getMessage());
    	}
-
-   	//You definitely do not want this method executing... 
+ 
    	public void fatalError(SAXParseException e) {
-   		System.out.println("[ERROR] " + "Fatal....:" + e.getMessage());
+   		System.out.println("[ERROR] " + "Alert:" + e.getMessage());
    		System.exit(0);
    	}
 	
    	
-   	//Start the ball rolling...
+   	//Get the program started
    	public static void main(String[] args) {
 		try {
 			Parser p = new Parser();

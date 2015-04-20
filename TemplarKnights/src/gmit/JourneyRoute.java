@@ -166,8 +166,7 @@ public class JourneyRoute {
 		node16.addChildNode(node15, 19);
 		node16.addChildNode(t, 60);
 	
-		transverse(t);
-		
+		transverse(t);		
 	}
 	
 	public Node getStartNode()

@@ -26,9 +26,9 @@ public class Runner {
 
 		public static void main(String[] args) throws SAXException, IOException
 		{
-			// TODO Auto-generated method stub
 			SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
-		    try 
+			//Calling in the Parser.java
+			try 
 		    {
 		        SAXParser saxParser = saxParserFactory.newSAXParser();
 		        Parser handler = new Parser();
@@ -50,7 +50,7 @@ public class Runner {
 	            return;
 	        }	    
 		    
-		    //System Object	    
+		    //System Object
 			Scanner input = new Scanner(System.in);
 			System.out.println("Welcome Good Sir. \n Pray tell what is your name?");
 			String name = input.nextLine();
@@ -73,13 +73,13 @@ public class Runner {
 				System.out.println("> Player Input: " + urInput);
 				switch(urInput)
 				{
-					case("look"):
+					case("Look"):
 					{
 						location.getName();
 						location.getDescription();
 						break;
 					}
-					case("leave"):
+					case("Leave"):
 					{
 						
 						location.getName();						
@@ -87,19 +87,19 @@ public class Runner {
 						urInput = scan.nextLine();	
 						break;
 					}
-					case("attack"):
+					case("Attack"):
 					{
 						
 					}
-					case("commands"):
+					case("Commands"):
 					{
-						System.out.println("go");
-						System.out.println("leave");
-						System.out.println("attack");
-						System.out.println("use");
-						System.out.println("quit");
+						System.out.println("Go");
+						System.out.println("Leave");
+						System.out.println("Attack");
+						System.out.println("Use");
+						System.out.println("Quit");
 					}
-					case("quit"):
+					case("Quit"):
 					{
 						System.out.println("Goodbye " + name);
 						play = false;

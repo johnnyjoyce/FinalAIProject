@@ -7,11 +7,11 @@ public interface Character extends Runnable {
 	public abstract void setCharacterName(String name);
 
 	public void Look();
-	public void go();
-	public void get();
-	public void move();
-	public void defend();
-	public void use();
-	public void take();
-	public void exit();
+	public void Go();
+	public void Get();
+	public void Move();
+	public void Defend();
+	public void Use();
+	public void Take();
+	public void Exit();
 }
